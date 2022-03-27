@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+ 
+--Cyan: hsl(179, 62%, 43%);
+--Bright: hsl(71, 73%, 54%);
+
+--LightGray: hsl(204, 43%, 93%);
+--Grayish: hsl(218, 22%, 67%);
+};
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  background-color: var(--LightGray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+ 
+  height: 475px;
+  width: 635px;
+  display: grid;
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+  overflow: hidden;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 44% 56%;
+ 
+ 
+}
+
+
+
+.header{
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 3 ;
+  
+}
+
+
+h2{
+  margin-left: 33px;
+  margin-top: 40px;
+  color: var(--Cyan);
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--Bright);
+  margin-left: 40px;
+}
+
+p {
+  color: var(--Grayish);
+  line-height: 26px;
+  margin-top: 11px;
+  margin-left: 40px;
+}
+
+.left-content{
+  background-color: var(--Cyan);
+}
+
+
+.right-content{
+  background-color:var(--Cyan);
+  opacity: 0.6;
+  color: white;
+}
+
+.h3-left{
+  margin-left: 40px;
+  margin-top: 40px;
+  color: white;
+}
+
+.p-left {
+ margin-bottom: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+span{
+  color: aliceblue;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.left-small {
+ 
+  font-weight: 400;
+  color: white;
+}
+
+button{
+  width: 237px;
+  margin-left: 40px;
+  margin-top: 8px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+  height: 48px;
+  border: none;
+  background-color: var(--Bright);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+@media (max-width:768px) {
+  .grid-container {
+    display:grid;
+    height: 722px;
+    width: 311px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 36% 32% 32%;
+  }
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 1 ;
+  }
+
+  p{
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  h3 {
+     font-size: 15px;
+     margin-right: 75px;
+  }
+}
